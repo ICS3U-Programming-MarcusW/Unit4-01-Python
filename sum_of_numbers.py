@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Created By: Marcus Wehbi
-# Date: Oct 19th, 2022
+# Date: Oct 30th, 2022
 # This program displays the sum of numbers from 0 until a users number
 
 
@@ -16,7 +16,7 @@ def main():
         # convert input from string to int
         user_num_int = int(user_num_string)
         # use if statement to make sure user does not input 0
-        if user_num_int == 0:
+        if user_num_int == 0 or user_num_int < 0:
             print("Enter a POSITIVE number.")
         else:
             # use while loop to calculate the sum of all the numbers
